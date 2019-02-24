@@ -11,7 +11,7 @@ For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/
 === */
 
 let charRNN;
-let textInput;
+// let textInput;
 // let lengthSlider;
 // let tempSlider;
 let button;
@@ -24,7 +24,7 @@ function setup() {
   charRNN = ml5.charRNN('./withoutsigns/', modelReady);
 
   // Grab the DOM elements
-  textInput = select('#textInput');
+  // textInput = select('#textInput');
   // lengthSlider = select('#lenSlider');
   // tempSlider = select('#tempSlider');
   button = select('#generate');
@@ -56,9 +56,9 @@ function generate() {
     select('#status').html('Generating...');
 
     // Grab the original text
-    let original = textInput.value();
+    // let original = textInput.value();
     // Make it to lower case
-    let txt = original.toLowerCase();
+    let txt = "The"
 
     // Check if there's something to send
     if (txt.length > 0) {

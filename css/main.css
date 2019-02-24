@@ -14,6 +14,11 @@ h1 {
 ul li {
   display: inline-block;
   list-style: none;
+  padding: .5em .5em;
+}
+
+nav {
+  background-color: yellow;
 }
 
 .container {
@@ -37,25 +42,28 @@ ul li {
 }
 
 a {
+  color: white;
   text-decoration: none;
+  text-transform: uppercase;
+}
 }
 
 * unvisited link */
 a:link {
-  color: green;
+  color: pink;
 }
 
 /* visited link */
 a:visited {
-  color: red;
+  color: #CC40E8;
 }
 
 /* mouse over link */
 a:hover {
-  color: blue;
+  color: pink;
 }
 
 /* selected link */
 a:active {
-  color: yellow;
+  color: pink;
 }
