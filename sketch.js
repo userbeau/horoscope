@@ -42,7 +42,7 @@ function setup() {
 // }
 
 function modelReady() {
-  select('#status').html('Model Loaded');
+  select('#status').html('Ready!');
 }
 
 // Generate new text
@@ -53,7 +53,7 @@ function generate() {
     runningInference = true;
 
     // Update the status log
-    select('#status').html('Generating...');
+    select('#status').html('Communicating with the stars...');
 
     // Grab the original text
     // let original = textInput.value();
@@ -67,7 +67,7 @@ function generate() {
       // TODO: What are the defaults?
       let data = {
         seed: txt,
-        temperature: 0.6,
+        temperature: 0.1,
         length: 300
       };
 

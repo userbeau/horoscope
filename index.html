@@ -17,6 +17,13 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
+  <script>
+    function myFunction(name)
+    {
+    document.getElementById("peep").innerHTML = name;
+    }
+</script>
+
 </head>
 
 <body class="container">
@@ -24,20 +31,34 @@
   <h3>Choose your sign:</h3>
   <nav>
     <ul>
-      <li><a href="#">Aries</a></li>
-      <li><a href="#">Taurus</a></li>
-      <li><a href="#">Gemini</a></li>
-      <li><a href="#">Cancer</a></li>
-      <li><a href="#">Leo</a></li>
-      <li><a href="#">Virgo</a></li>
-      <li><a href="#">Libra</a></li>
-      <li><a href="#">Scorpio</a></li>
-      <li><a href="#">Sagittarius</a></li>
-      <li><a href="#">Capricorn</a></li>
-      <li><a href="#">Capricorn</a></li>
-      <li><a href="#">Pisces</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Aries')">Aries</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Taurus')">Taurus</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Gemini')">Gemini</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Cancer')">Cancer</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Leo')">Leo</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Virgo')">Virgo</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Libra')">Libra</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Scorpio')">Scorpio</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Sagittarius')">Sagittarius</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Capricorn')">Capricorn</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Aquarius')">Aquarius</a></li>
+      <li><a class="myButton" href="#" onclick="myFunction('Pisces')">Pisces</a></li>
     </ul>
   </nav>
+
+
+
+  <!-- <h4 id="myDIV1"style="display:none;">Aries</h4>
+  <h4 id="myDIV2"style="display:none;">Taurus</h4>
+  <h4 id="myDIV"style="display:none;">Gemini</h4>
+  <h4 id="myDIV"style="display:none;">Cancer</h4>
+  <h4 id="myDIV"style="display:none;">Leo</h4>
+  <h4 id="myDIV"style="display:none;">Virgo</h4>
+  <h4 id="myDIV"style="display:none;">Scorpio</h4>
+  <h4 id="myDIV"style="display:none;">Sagittarius</h4>
+  <h4 id="myDIV"style="display:none;">Capricorn</h4>
+  <h4 id="myDIV"style="display:none;">Aquarius</h4>
+  <h4 id="myDIV"style="display:none;">Pisces</h4> -->
   <!-- <h2>This example uses a pre-trained model on a corpus of Horoscopes</h2> -->
   <!-- <p>Type your name:
     <input id="textInput" value="" />
@@ -46,8 +67,10 @@
     <input id="lenSlider" type="range" min="10" max="10000" value="100"> <span id="length">100</span></p>
   <p>temperature:
     <input id="tempSlider" type="range" min="0" max="1" step="0.01"><span id="temperature">0.5</span></p> -->
-  <p id="status">Loading Model</p>
-  <button id="generate">Get your Horoscope</button>
+  <p id="status">Communicating with the stars...</p>
+    <p id="peep"></p>
+  <button class="myButton" id="generate">Get your Horoscope</button>
+
   <p id="result"></p>
 
 
