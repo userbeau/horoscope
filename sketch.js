@@ -67,7 +67,7 @@ function generate() {
       // TODO: What are the defaults?
       let data = {
         seed: txt,
-        temperature: 0.1,
+        temperature: 0.5,
         length: 300
       };
 
